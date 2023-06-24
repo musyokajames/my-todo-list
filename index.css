@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+}
+.paper {
+    background-color: #f9f9f9;
+    margin: auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 
+    /*the top layer shadow*/
+    0px 1px 1px rgba(0, 0, 0, 1.5),
+    /*the second layer */
+    0px 10px 0 -5px #eee,
+    /*the second layer shadow*/
+    0px 10px 1px -4px rgba(0,0,0,0.15),
+    /*the third layer */
+    0 2px 0 -10px #eee,
+    /*the third layer shadow*/
+    0 20px 1px -9px rgba(0, 0, 0, 0.15)
+}
+
+.header{
+    text-align: center;
+    color: black;
+    padding-bottom: 0px;
+}
+
+
+.main-header{
+    margin-bottom: 0.5em;
+    margin-top: 0;
+    padding-top: 20px;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.input{
+    margin:0;
+    border: none;
+    border-radius: 0;
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+}
+
+.addBtn{
+    padding: 10px;
+    width: 25%;
+    background: #d9d9d9;
+    color: #555;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+}
+
+.bodypart{
+    margin-top: 10px;
+    padding-top: 20px;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    border: 1px solid black;
+}
+li:nth-child(even){
+    background-color:rgb(209, 200, 189);
+    
+}
+.paper li{
+    list-style-type:lower-roman;
+    padding: 10px;
+    position: relative;
+    cursor: auto;
+}
+li:hover{
+    background-color:#aa9c9c;
+}
+li::first-letter{
+    text-transform: capitalize;
+}
+.close {
+    position: absolute;
+    top: 1;
+    right: 0;
+    bottom: 1;
+    color: black;
+    font-weight: bolder;
+    font-size: larger;
+    cursor: pointer;
+    margin: 0 10px;
+}
+li.checked {
+    text-decoration: line-through;
+    color: #999;
+    background-color: #625959;
+}
